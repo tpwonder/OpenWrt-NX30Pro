@@ -25,3 +25,4 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/M
 ####### Replace with JerryKuKu’s Argon
 rm openwrt/package/lean/luci-theme-argon -rf #delete original argon theme
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git  #repleace with JerryKuKu’s Argon
+git clone https://github.com/jerrykuku/luci-app-argon-config #add JerryKuKu’s Argon Config Feature
