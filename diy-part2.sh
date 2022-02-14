@@ -21,8 +21,3 @@ sed -i "s/OpenWrt /Steven build from Lede $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt
 
 ####### Set argon as default theme
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
-
-####### Replace with JerryKuKu’s Argon
-rm openwrt/package/lean/luci-theme-argon -rf #delete original argon theme
-git clone https://github.com/jerrykuku/luci-theme-argon.git  #repleace with JerryKuKu’s Argon
-git clone https://github.com/jerrykuku/luci-app-argon-config #add JerryKuKu’s Argon Config Feature
