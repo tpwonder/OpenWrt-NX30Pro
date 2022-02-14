@@ -13,7 +13,12 @@
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
-# Add a feed source
+# Add Custom feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 echo 'src-git helloworld https://github.com/fw876/helloworld.git' >> 'feeds.conf.default'
+
+####### Replace with JerryKuKu’s Argon #####
+rm openwrt/package/lean/luci-theme-argon -rf #delete original argon theme
+echo 'src-git https://github.com/jerrykuku/luci-theme-argon.git' >> 'feeds.conf.default' #repleace with JerryKuKu’s Argon
+echo 'src-git https://github.com/jerrykuku/luci-app-argon-config' >> 'feeds.conf.default' #add JerryKuKu’s Argon Config Feature
