@@ -20,5 +20,5 @@ echo 'src-git helloworld https://github.com/fw876/helloworld.git' >> 'feeds.conf
 
 ####### Replace with JerryKuKu’s Argon
 rm openwrt/package/lean/luci-theme-argon -rf #delete original argon theme
-echo 'src-git https://github.com/jerrykuku/luci-theme-argon.git' >> 'feeds.conf.default' #repleace with JerryKuKu’s Argon
-echo 'src-git https://github.com/jerrykuku/luci-app-argon-config.git' >> 'feeds.conf.default' #add JerryKuKu’s Argon Config Feature
+echo 'src-git ArgonTheme https://github.com/jerrykuku/luci-theme-argon.git' >> 'feeds.conf.default' #repleace with JerryKuKu’s Argon Theme
+echo 'src-git ArgonThemeConfig https://github.com/jerrykuku/luci-app-argon-config.git' >> 'feeds.conf.default' #add JerryKuKu’s Argon Config Feature
