@@ -26,8 +26,5 @@ echo 'src-git helloworld https://github.com/fw876/helloworld.git' >> 'feeds.conf
 rm -rf package/lean/luci-theme-argon  #删除原Argon主题
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon #加入JerryKuKu’s Argon
 git clone https://github.com/jerrykuku/luci-app-argon-config package/lean/luci-app-argon-config #加入JerryKuKu’s Argon Config
-cd ..
-cd ..
-
-####### Add OpenAppFilter function
-git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
+#cd ..
+#cd ..
